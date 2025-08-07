@@ -5,6 +5,7 @@ import sneaker5 from "../assets/sneaker5.png";
 import sneaker6 from "../assets/sneaker6.png";
 import FeaturedProducts from "./FeaturedProducts";
 import HomeHighlights from "./HomeHighlights";
+import { Link } from "react-router-dom";
 
 
 const sneakers = [sneaker1, sneaker5, sneaker6];
@@ -31,9 +32,10 @@ const Hero = () => {
         <p className="text-[#A1866F] mt-4 md:text-lg">
           Premium sneakers for everyday kings and Queens. Walk bold, live bold.
         </p>
-        <button className="mt-6 bg-[#6B4F3B] text-[#F4F1EE] py-3 px-8 rounded-full hover:bg-[#A1866F] transition-all duration-300">
+        <Link to="/products" ><button className="mt-6 bg-[#6B4F3B] text-[#F4F1EE] py-3 px-8 rounded-full hover:bg-[#A1866F] transition-all duration-300">
           Shop Now
         </button>
+        </Link>
       </div>
 
       {/* Sneaker Image Slider */}
