@@ -12,10 +12,10 @@ const Navbar = () => {
     <header className="bg-[#1C1C1C] text-[#F4F1EE] w-full fixed top-0 left-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         
-        <h1 className="text-2xl font-bold tracking-wide font-sans uppercase">
+       <Link to="/" > <h1 className="text-2xl font-bold tracking-wide font-sans uppercase">
           SneakUp
         </h1>
-
+</Link>
       
         <nav className="hidden md:flex gap-8 items-center">
           <Link to="/" className="hover:text-[#A1866F] transition-all">Home</Link>
@@ -33,7 +33,15 @@ const Navbar = () => {
         </nav>
 
       
-        <div className="md:hidden">
+        <div  className="md:hidden flex items-center gap-4 relative">
+           <Link to="/cart" className="relative cursor-pointer">
+            <ShoppingCart />
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 text-xs bg-[#6B4F3B] text-white rounded-full px-1.5">
+                {cartCount}
+              </span>
+            )}
+          </Link>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>

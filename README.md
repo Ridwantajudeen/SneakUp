@@ -2,7 +2,7 @@
 
 SneakUp is a premium, Nike-inspired e-commerce platform for high-end sneakers. Designed for a smooth, aesthetic, and engaging shopping experience using modern frontend technologies and real payment integration.
 
-## 🔥 Features
+## Features
 
 - Clean, luxury-inspired UI (black base + neon/coffee-toned accent)
 - Smooth scroll-based animations (Framer Motion)
@@ -11,7 +11,7 @@ SneakUp is a premium, Nike-inspired e-commerce platform for high-end sneakers. D
 - Filter and sort sneakers by category (Men, Women, All)
 - EmailJS integration for order receipts
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React.js + Vite
 - **Styling**: Tailwind CSS
@@ -21,5 +21,5 @@ SneakUp is a premium, Nike-inspired e-commerce platform for high-end sneakers. D
 - **Database**: Firebase Firestore
 - **Email**: EmailJS
 
-## 📁 Folder Structure
+## Folder Structure
 
