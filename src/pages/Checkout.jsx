@@ -64,7 +64,7 @@ export default function Checkout() {
           // Navigate to success page with order data
           navigate("/success", { state: { order: orderData } });
         } catch (error) {
-          console.error("❌ Firestore error:", error);
+          console.error(" Firestore error:", error);
         }
       },
       () => alert("Payment cancelled")
@@ -73,8 +73,8 @@ export default function Checkout() {
 
   if (cart.length === 0 && !orderPlaced) {
     return (
-      <div className="min-h-screen bg-black text-white p-6">
-        <h1 className="text-2xl font-bold mb-4">Checkout</h1>
+      <div className="min-h-screen  mt-12 bg-black text-white p-6 max-w-3xl mx-auto pt-24">
+        <h1 className="text-2xl mt-12 font-bold mb-4">Checkout</h1>
         <p>
           Your cart is empty.{" "}
           <Link to="/" className="underline text-green-400">
@@ -87,7 +87,7 @@ export default function Checkout() {
 
   return (
     <div className="min-h-screen bg-black text-white p-6 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">Checkout</h1>
+      <h1 className="text-3xl mt-12 font-bold mb-6">Checkout</h1>
 
       <form
         className="space-y-6"

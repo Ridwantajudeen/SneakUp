@@ -3,7 +3,7 @@ import { Instagram, Twitter, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12 px-6">
+    <footer className="bg-black mt-12 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 text-sm">
         
         
@@ -60,7 +60,7 @@ const Footer = () => {
             <a href="#" aria-label="Instagram" className="hover:text-white transition">
               <Instagram size={20} />
             </a>
-            <a href="#" aria-label="Twitter" className="hover:text-white transition">
+            <a href="https://twitter.com/Ritajtimi" aria-label="Twitter" className="hover:text-white transition">
               <Twitter size={20} />
             </a>
             <a href="#" aria-label="YouTube" className="hover:text-white transition">
